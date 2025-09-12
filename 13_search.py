@@ -12,11 +12,11 @@ print(f'G는 어디?:{a.index('G',5)}')
 
 b = [3,4,1,2,3,4,5,6,1,3,2] # 모든 3을 찾아 보세요.
 
-idx = 0
-# while True:
-#     idx = b.index(3,idx)
-#     print(f'3의 값은 {idx}번에 있다')
-#     idx += 1
+idx = 0 # idx를 0으로 설정
+while True: #무한으로 찾을때까지 돌리겠다
+     idx = b.index(3,idx) # 0 부터 시작해서 3을 찾겠슴
+     print(f'3의 값은 {idx}번에 있다') # 3의 값은(3을 찾은 인덱스 값)번 에 있다 라고 출력
+     idx += 1 # idx+1을 해서 while로 보내 반복한다
 
 for n in b: # for in 을 이용하면 list 에 있는 값을 순서대로 하나씩 뽑아낸다.
     if n == 3:
